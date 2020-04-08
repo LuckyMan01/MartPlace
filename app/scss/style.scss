@@ -2,3 +2,276 @@
 @import 'global';
 @import 'fonts';
 
+
+//start header
+.header__top{
+    background-color: $bg;
+    height: 100px;
+}
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    &-btn{
+        margin-left: auto;
+        margin-right: 20px;
+        a{
+            text-align: center;
+            min-width: 140px;
+            font-size: 14px;
+            border-radius: 25px;
+            background-color: $btn;
+            cursor: pointer;
+            padding: 8px 10px;
+            color: #fff;
+        }
+    }
+    &-icons{
+        width: 165px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        a{
+            height: 20px;
+            width: 20px;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0 16px;
+        }
+    }
+}
+.inner__user{
+    display: flex;
+    justify-content: space-between;
+    &-photo{
+        max-height: 50px;
+        max-width: 50px;
+        margin-right: 24px;
+        margin-left: 20px;
+        a{
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+    }
+    &-info{
+        &-name{
+            line-height: 22px;
+            color: #333;
+            font-weight: 600;
+        }
+        &-maney{
+            color: $btn;
+        }
+        a{
+            font-size: 15px;
+            display: block;
+        }
+    }
+}
+//header top end
+//start menu header
+.menu__inner{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-list{
+        padding-left: 0;
+        margin: 0;
+        li{
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: 600;
+            color: #333;
+            display: inline-block;
+            & + li{
+                margin: 0 18px;
+            }
+        }
+    }
+    &-form{
+        position: relative;
+        color: $serch;
+        font-size: 15px;
+        input{
+            width: 360px;
+            padding: 12px 70px 12px 22px;
+            border-radius: 28px;
+            border: none;
+            border: 1px solid #d9dfe5;
+            overflow: hidden;
+            outline: none;
+        }
+        button{
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-color: $btn ;
+            border: none;
+            height: 42px;
+            width: 68px;
+            border-radius: 28px;
+            outline: none;
+        }
+    }
+}
+//end menu
+//start slider header
+
+.header__slider{
+    font-weight: 400;
+    position: relative;
+    height: 100%;
+    display: block;
+    text-align: center;
+    min-height: 724px;
+    background: linear-gradient(90deg, #5579fa, #3b61e9 );
+}
+.slider__items{
+    margin-top: 180px;
+    color: #f3f3f8;
+    &-title{
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 70px;
+        span{
+            display: block;
+            font-weight: 600;
+        }
+    }
+    &-text{
+        font-size: 20px;
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+    &-btn{
+        button{
+            color: #fff;
+            border: none;
+            padding: 13px 30px;
+            background-color: transparent;
+            border: 1px solid #fff;
+            margin-left: 30px;
+            border-radius: 28px;
+            outline: none;
+            &:hover{
+                background-color: #fff;
+                color: $btn ;
+            }
+        }
+    }
+}
+//end slider header
+//sta
+.header__forms{
+    position: absolute;
+    bottom: -69px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.header__forms-inner{
+    z-index: 5;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    width: 1140px;
+    height: 137px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 7px;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+    &::before{
+        z-index: -1;
+        top: -26px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        border-radius: 7px;
+        position: absolute;
+        content: '';
+        width: 1080px;
+        height: 130px;
+        background-color: #fff;
+        opacity: .5;
+    }
+    &::after{
+        z-index: -1;
+        top: -15px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        border-radius: 7px;
+        position: absolute;
+        content: '';
+        width: 1110px;
+        height: 130px;
+        background-color: #fff;
+        opacity: .5;
+    }
+    
+}
+.header__forms-search{
+    position: relative;
+    color: $serch;
+    font-size: 16px;
+    margin-right: 20px;
+    input{
+        padding: 17px 195px 17px 22px;
+        border-radius: 6px;
+        border: none;
+        border: 1px solid #d9dfe5;
+        overflow: hidden;
+        outline: none;
+        width: 810px;
+    }
+    button{
+        cursor: pointer;
+        color: #555;
+        z-index: 6;
+        position: absolute;
+        right: 0;
+        top: 0;
+        text-align: left;
+        padding-left: 20px;   
+        background-color: #fff;
+        display: inline-block;
+        border: none;
+        height: 54px;
+        width: 194px;
+        border-radius: 6px;
+        outline: none;
+        border: 1px solid #d9dfe5;
+        img{
+            position: absolute;
+            top: 22px;
+            right: 12px;
+        }
+        &:hover{
+            color: #fff;
+            background-color: $btn;
+            transition: .3s;
+            img{
+                fill: #fff;
+                //img потрібно cvg
+            }
+        }
+    }
+}
+.header__forms-btn{
+    margin-left: 10px;
+    a{
+        padding: 15px 69px;
+        color: #fff;
+        border-radius: 6px;
+        background-color: $btn;
+        text-align: center;
+    }
+}
+//end header
