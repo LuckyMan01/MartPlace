@@ -10,4 +10,14 @@ $(function(){
         autoplaySpeed: 2000
       });
 
+      $('.product__inner-slider').slick({ 
+        slidesToShow: 1,
+        slidesToScroll: 1, 
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        prevArrow: $('.product-prev'),
+        nextArrow: $('.product-next')
+      });
+
 });
