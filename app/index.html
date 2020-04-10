@@ -121,10 +121,15 @@
             <div class="header__forms-inner">
                 <div class="header__forms-search">
                     <input type="text" placeholder="Search your products..." required>
-                    <button type="submit">
-                        All Categories
-                        <img src="images/icons/arrow-down.png" alt="">
-                    </button>
+                    <select size="1" name="All Categories" autofocus>All Categories
+                        <option selected value="All Categories">All Categories</option>
+                        <option value="Trending items">Trending items</option>
+                        <option value="Best seller">Best seller</option>
+                        <option value="Best rating">Best rating</option>
+                        <option value="Low price">Low price</option>
+                        <option value="High price">High price</option>
+                    </select>
+                    <img src="images/icons/arrow-down.png" alt="">
                 </div>
                 <div class="header__forms-btn">
                     <a href="#">Search Now</a>
@@ -181,13 +186,15 @@
         <div class="product__inner">
             <div class="container">
                 <div class="product__inner-content">
-                    <div class="product__inner-top product__top">
+                    <div class="product__inner-top product__top title__top">
                         <div class="product__top-title">
                             Weekly Featured Products
                         </div>
                         <div class="product__top-arrows">
-                            <button type="button" class="product-prev"><img src="images/icons/aroow-left.png" alt=""></button>
-                            <button type="button" class="product-next"><img src="images/icons/aroow-right.png" alt=""></button>
+                            <button type="button" class="product-prev"><img src="images/icons/aroow-left.png"
+                                    alt=""></button>
+                            <button type="button" class="product-next"><img src="images/icons/aroow-right.png"
+                                    alt=""></button>
                         </div>
                     </div>
                     <div class="product__inner-slider product__slider">
@@ -227,17 +234,16 @@
                                     <a href="#">landing page</a>
                                 </div>
                                 <div class="product__content-button product__button">
-                                    <div class="product__button-price">
+                                    <div class="product__button-price ">
                                         $10 - $50
                                     </div>
-                                    <div class="product__button-foloves">
+                                    <div class="product__button-foloves ">
                                         <a href="#"><img src="images/icons/folovs.png" alt=""></a>
                                     </div>
-                                    <div class="product__button-carts">
+                                    <div class="product__button-carts ">
                                         <a href="#"><img src="images/icons/cart-blye.png" alt=""></a>
                                     </div>
-                                    <div class="product__button-stars">
-                                        (05)
+                                    <div class="product__button-stars rate-star ">
                                     </div>
                                 </div>
                             </div>
@@ -277,18 +283,18 @@
                                     <a href="#">plugin</a>
                                     <a href="#">landing page</a>
                                 </div>
-                                <div class="product__content-button product__button">
-                                    <div class="product__button-price">
+                                <div class="product__content-button product__button ">
+                                    <div class="product__button-price button__price">
                                         $10 - $50
                                     </div>
-                                    <div class="product__button-foloves">
+                                    <div class="product__button-foloves ">
                                         <a href="#"><img src="images/icons/folovs.png" alt=""></a>
                                     </div>
-                                    <div class="product__button-carts">
+                                    <div class="product__button-carts ">
                                         <a href="#"><img src="images/icons/cart-blye.png" alt=""></a>
                                     </div>
-                                    <div class="product__button-stars">
-                                        (05)
+                                    <div class="product__button-stars rate-star ">
+
                                     </div>
                                 </div>
                             </div>
@@ -328,19 +334,17 @@
                                     <a href="#">plugin</a>
                                     <a href="#">landing page</a>
                                 </div>
-                                <div class="product__content-button product__button">
-                                    <div class="product__button-price">
+                                <div class="product__content-button product__button ">
+                                    <div class="product__button-price ">
                                         $10 - $50
                                     </div>
-                                    <div class="product__button-foloves">
+                                    <div class="product__button-foloves ">
                                         <a href="#"><img src="images/icons/folovs.png" alt=""></a>
                                     </div>
-                                    <div class="product__button-carts">
+                                    <div class="product__button-carts ">
                                         <a href="#"><img src="images/icons/cart-blye.png" alt=""></a>
                                     </div>
-                                    <div class="product__button-stars">
-                                        (05)
-                                    </div>
+                                    <div class="product__button-stars rate-star "></div>
                                 </div>
                             </div>
                         </div>
@@ -351,6 +355,450 @@
         </div>
     </sections>
 
+    <section class="follower">
+        <div class="container">
+            <div class="follower__inner-top follower__top title__top">
+                <div class="follower__top-title">
+                    Your Followers Feed
+                </div>
+                <div class="follower__top-arrows">
+                    <button type="button" class="follower-prev"><img src="images/icons/aroow-left.png" alt=""></button>
+                    <button type="button" class="follower-next"><img src="images/icons/aroow-right.png" alt=""></button>
+                </div>
+            </div>
+            <div class="follower__inner">
+                <div class="follower__slider-item follower__item ">
+                    <div class="follower__item-img" style="background-image: url(images/content/icon-product-1.jpg);">
+                        <div class="follower__item-img-hover">
+                            <a class="follower__img-hover" href="#">More Info</a>
+                            <a class="follower__img-hover" href="#">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="follower__item-content ">
+                        <div class="follower__content-title">
+                            E-commerce Shopping Cart
+                        </div>
+                        <div class="follower__content-autor content__autor">
+                            <div class="content__autor-photo">
+                                <a href="#" style="background-image: url(images/content/user.jpg);">
+                                </a>
+                            </div>
+                            <a class="content__autor-name" href="#">
+                                AazzTech
+                            </a>
+                            <a class="content__autor-tems" href="#">
+                                <img src="images/content/autor-tems.png" alt="">
+                            </a>
+                        </div>
+                        <div class="follower__content-text">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                            the mattis, leo quam aliquet congue.
+                        </div>
+                        <div class="follower__content-button">
+                            <div class="follower__content-price ">
+                                $10
+                            </div>
+                            <div class="follower__content-foloves ">
+                                <a href="#"><img src="images/icons/folovs.png" alt="">45</a>
+                            </div>
+                            <div class="follower__content-stars rate-star">
+                            </div>
+                            <div class="follower__content-carts ">
+                                <a href="#"><img src="images/icons/cart-blye.png" alt="">566</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="follower__slider-item follower__item ">
+                    <div class="follower__item-img" style="background-image: url(images/content/icon-product-1.jpg);">
+                        <div class="follower__item-img-hover">
+                            <a class="follower__img-hover" href="#">More Info</a>
+                            <a class="follower__img-hover" href="#">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="follower__item-content ">
+                        <div class="follower__content-title">
+                            E-commerce Shopping Cart
+                        </div>
+                        <div class="follower__content-autor content__autor">
+                            <div class="content__autor-photo">
+                                <a href="#" style="background-image: url(images/content/user.jpg);">
+                                </a>
+                            </div>
+                            <a class="content__autor-name" href="#">
+                                AazzTech
+                            </a>
+                            <a class="content__autor-tems" href="#">
+                                <img src="images/content/autor-tems.png" alt="">
+                            </a>
+                        </div>
+                        <div class="follower__content-text">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                            the mattis, leo quam aliquet congue.
+                        </div>
+                        <div class="follower__content-button">
+                            <div class="follower__content-price ">
+                                $10
+                            </div>
+                            <div class="follower__content-foloves ">
+                                <a href="#"><img src="images/icons/folovs.png" alt="">45</a>
+                            </div>
+                            <div class="follower__content-stars rate-star">
+                            </div>
+                            <div class="follower__content-carts ">
+                                <a href="#"><img src="images/icons/cart-blye.png" alt="">566</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="follower__slider-item follower__item ">
+                    <div class="follower__item-img" style="background-image: url(images/content/icon-product-1.jpg);">
+                        <div class="follower__item-img-hover">
+                            <a class="follower__img-hover" href="#">More Info</a>
+                            <a class="follower__img-hover" href="#">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="follower__item-content ">
+                        <div class="follower__content-title">
+                            E-commerce Shopping Cart
+                        </div>
+                        <div class="follower__content-autor content__autor">
+                            <div class="content__autor-photo">
+                                <a href="#" style="background-image: url(images/content/user.jpg);">
+                                </a>
+                            </div>
+                            <a class="content__autor-name" href="#">
+                                AazzTech
+                            </a>
+                            <a class="content__autor-tems" href="#">
+                                <img src="images/content/autor-tems.png" alt="">
+                            </a>
+                        </div>
+                        <div class="follower__content-text">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                            the mattis, leo quam aliquet congue.
+                        </div>
+                        <div class="follower__content-button">
+                            <div class="follower__content-price ">
+                                $10
+                            </div>
+                            <div class="follower__content-foloves ">
+                                <a href="#"><img src="images/icons/folovs.png" alt="">45</a>
+                            </div>
+                            <div class="follower__content-stars rate-star">
+                            </div>
+                            <div class="follower__content-carts ">
+                                <a href="#"><img src="images/icons/cart-blye.png" alt="">566</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="follower__slider-item follower__item ">
+                    <div class="follower__item-img" style="background-image: url(images/content/icon-product-1.jpg);">
+                        <div class="follower__item-img-hover">
+                            <a class="follower__img-hover" href="#">More Info</a>
+                            <a class="follower__img-hover" href="#">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="follower__item-content ">
+                        <div class="follower__content-title">
+                            E-commerce Shopping Cart
+                        </div>
+                        <div class="follower__content-autor content__autor">
+                            <div class="content__autor-photo">
+                                <a href="#" style="background-image: url(images/content/user.jpg);">
+                                </a>
+                            </div>
+                            <a class="content__autor-name" href="#">
+                                AazzTech
+                            </a>
+                            <a class="content__autor-tems" href="#">
+                                <img src="images/content/autor-tems.png" alt="">
+                            </a>
+                        </div>
+                        <div class="follower__content-text">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                            the mattis, leo quam aliquet congue.
+                        </div>
+                        <div class="follower__content-button">
+                            <div class="follower__content-price ">
+                                $10
+                            </div>
+                            <div class="follower__content-foloves ">
+                                <a href="#"><img src="images/icons/folovs.png" alt="">45</a>
+                            </div>
+                            <div class="follower__content-stars rate-star">
+                            </div>
+                            <div class="follower__content-carts ">
+                                <a href="#"><img src="images/icons/cart-blye.png" alt="">566</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="follower__slider-item follower__item ">
+                    <div class="follower__item-img" style="background-image: url(images/content/icon-product-1.jpg);">
+                        <div class="follower__item-img-hover">
+                            <a class="follower__img-hover" href="#">More Info</a>
+                            <a class="follower__img-hover" href="#">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="follower__item-content ">
+                        <div class="follower__content-title">
+                            E-commerce Shopping Cart
+                        </div>
+                        <div class="follower__content-autor content__autor">
+                            <div class="content__autor-photo">
+                                <a href="#" style="background-image: url(images/content/user.jpg);">
+                                </a>
+                            </div>
+                            <a class="content__autor-name" href="#">
+                                AazzTech
+                            </a>
+                            <a class="content__autor-tems" href="#">
+                                <img src="images/content/autor-tems.png" alt="">
+                            </a>
+                        </div>
+                        <div class="follower__content-text">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                            the mattis, leo quam aliquet congue.
+                        </div>
+                        <div class="follower__content-button">
+                            <div class="follower__content-price ">
+                                $10
+                            </div>
+                            <div class="follower__content-foloves ">
+                                <a href="#"><img src="images/icons/folovs.png" alt="">45</a>
+                            </div>
+                            <div class="follower__content-stars rate-star">
+                            </div>
+                            <div class="follower__content-carts ">
+                                <a href="#"><img src="images/icons/cart-blye.png" alt="">566</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="follower__slider-item follower__item ">
+                    <div class="follower__item-img" style="background-image: url(images/content/icon-product-1.jpg);">
+                        <div class="follower__item-img-hover">
+                            <a class="follower__img-hover" href="#">More Info</a>
+                            <a class="follower__img-hover" href="#">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="follower__item-content ">
+                        <div class="follower__content-title">
+                            E-commerce Shopping Cart
+                        </div>
+                        <div class="follower__content-autor content__autor">
+                            <div class="content__autor-photo">
+                                <a href="#" style="background-image: url(images/content/user.jpg);">
+                                </a>
+                            </div>
+                            <a class="content__autor-name" href="#">
+                                AazzTech
+                            </a>
+                            <a class="content__autor-tems" href="#">
+                                <img src="images/content/autor-tems.png" alt="">
+                            </a>
+                        </div>
+                        <div class="follower__content-text">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                            the mattis, leo quam aliquet congue.
+                        </div>
+                        <div class="follower__content-button">
+                            <div class="follower__content-price ">
+                                $10
+                            </div>
+                            <div class="follower__content-foloves ">
+                                <a href="#"><img src="images/icons/folovs.png" alt="">45</a>
+                            </div>
+                            <div class="follower__content-stars rate-star">
+                            </div>
+                            <div class="follower__content-carts ">
+                                <a href="#"><img src="images/icons/cart-blye.png" alt="">566</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="follower__slider-item follower__item ">
+                    <div class="follower__item-img" style="background-image: url(images/content/icon-product-1.jpg);">
+                        <div class="follower__item-img-hover">
+                            <a class="follower__img-hover" href="#">More Info</a>
+                            <a class="follower__img-hover" href="#">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="follower__item-content ">
+                        <div class="follower__content-title">
+                            E-commerce Shopping Cart
+                        </div>
+                        <div class="follower__content-autor content__autor">
+                            <div class="content__autor-photo">
+                                <a href="#" style="background-image: url(images/content/user.jpg);">
+                                </a>
+                            </div>
+                            <a class="content__autor-name" href="#">
+                                AazzTech
+                            </a>
+                            <a class="content__autor-tems" href="#">
+                                <img src="images/content/autor-tems.png" alt="">
+                            </a>
+                        </div>
+                        <div class="follower__content-text">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                            the mattis, leo quam aliquet congue.
+                        </div>
+                        <div class="follower__content-button">
+                            <div class="follower__content-price ">
+                                $10
+                            </div>
+                            <div class="follower__content-foloves ">
+                                <a href="#"><img src="images/icons/folovs.png" alt="">45</a>
+                            </div>
+                            <div class="follower__content-stars rate-star">
+                            </div>
+                            <div class="follower__content-carts ">
+                                <a href="#"><img src="images/icons/cart-blye.png" alt="">566</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="follower__slider-item follower__item ">
+                    <div class="follower__item-img" style="background-image: url(images/content/icon-product-1.jpg);">
+                        <div class="follower__item-img-hover">
+                            <a class="follower__img-hover" href="#">More Info</a>
+                            <a class="follower__img-hover" href="#">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="follower__item-content ">
+                        <div class="follower__content-title">
+                            E-commerce Shopping Cart
+                        </div>
+                        <div class="follower__content-autor content__autor">
+                            <div class="content__autor-photo">
+                                <a href="#" style="background-image: url(images/content/user.jpg);">
+                                </a>
+                            </div>
+                            <a class="content__autor-name" href="#">
+                                AazzTech
+                            </a>
+                            <a class="content__autor-tems" href="#">
+                                <img src="images/content/autor-tems.png" alt="">
+                            </a>
+                        </div>
+                        <div class="follower__content-text">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                            the mattis, leo quam aliquet congue.
+                        </div>
+                        <div class="follower__content-button">
+                            <div class="follower__content-price ">
+                                $10
+                            </div>
+                            <div class="follower__content-foloves ">
+                                <a href="#"><img src="images/icons/folovs.png" alt="">45</a>
+                            </div>
+                            <div class="follower__content-stars rate-star">
+                            </div>
+                            <div class="follower__content-carts ">
+                                <a href="#"><img src="images/icons/cart-blye.png" alt="">566</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="follower__slider-item follower__item ">
+                    <div class="follower__item-img" style="background-image: url(images/content/icon-product-1.jpg);">
+                        <div class="follower__item-img-hover">
+                            <a class="follower__img-hover" href="#">More Info</a>
+                            <a class="follower__img-hover" href="#">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="follower__item-content ">
+                        <div class="follower__content-title">
+                            E-commerce Shopping Cart
+                        </div>
+                        <div class="follower__content-autor content__autor">
+                            <div class="content__autor-photo">
+                                <a href="#" style="background-image: url(images/content/user.jpg);">
+                                </a>
+                            </div>
+                            <a class="content__autor-name" href="#">
+                                AazzTech
+                            </a>
+                            <a class="content__autor-tems" href="#">
+                                <img src="images/content/autor-tems.png" alt="">
+                            </a>
+                        </div>
+                        <div class="follower__content-text">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                            the mattis, leo quam aliquet congue.
+                        </div>
+                        <div class="follower__content-button">
+                            <div class="follower__content-price ">
+                                $10
+                            </div>
+                            <div class="follower__content-foloves ">
+                                <a href="#"><img src="images/icons/folovs.png" alt="">45</a>
+                            </div>
+                            <div class="follower__content-stars rate-star">
+                            </div>
+                            <div class="follower__content-carts ">
+                                <a href="#"><img src="images/icons/cart-blye.png" alt="">566</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fact">
+        <div class="container">
+            <div class="fact__inner">
+                <div class="fact__items">
+                    <div class="fact__items-img">
+                        <img src="images/icons/briefcase.png" alt="">
+                    </div>
+                    <div class="fact__items-number items-number-1">
+                        38,346
+                        <span>items for sale</span>
+                    </div>
+                </div>
+                <div class="fact__items">
+                    <div class="fact__items-img">
+                        <img src="images/icons/cloud-download.png" alt="">
+                    </div>
+                    <div class="fact__items-number items-number-2">
+                        3,736
+                        <span>total sales</span>
+                    </div>
+                </div>
+                <div class="fact__items">
+                    <div class="fact__items-img">
+                        <img src="images/icons/smile.png" alt="">
+                    </div>
+                    <div class="fact__items-number items-number-3">
+                        2,736
+                        <span>happy customers</span>
+                    </div>
+                </div>
+                <div class="fact__items">
+                    <div class="fact__items-img">
+                        <img src="images/icons/users.png" alt="">
+                    </div>
+                    <div class="fact__items-number items-number-4">
+                        25,736
+                        <span>members</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
