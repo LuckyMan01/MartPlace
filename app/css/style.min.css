@@ -42,12 +42,12 @@ body {
 .container-fluid {
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0;
 }
 
 @media (max-width: 720px) {
   .container-fluid {
-    padding: 0 15px;
+    padding: 0;
   }
 }
 
@@ -1024,4 +1024,80 @@ body {
   font-size: 16px;
   color: #555;
   padding-bottom: 0 10px 50px 10px;
+}
+
+.sell__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 565px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.sell__items-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  width: 50%;
+  background-image: url(../images/seell-bg-left.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.sell__items-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  width: 50%;
+  background-image: url(../images/seell-bg-right.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.sell__items {
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.sell__items-img {
+  height: 104px;
+  margin-bottom: 45px;
+}
+
+.sell__items-title {
+  font-size: 36px;
+  line-height: 30px;
+  margin-bottom: 34px;
+}
+
+.sell__items-text {
+  max-width: 590px;
+  margin-bottom: 45px;
+}
+
+.sell__items-btn a {
+  padding: 15px 30px;
+  color: #0674ec;
+  background-color: #fff;
+  border-radius: 25px;
+}
+
+.sell__items-btn a:hover {
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+  color: #fff;
+  background-color: #8bc34a;
 }

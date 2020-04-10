@@ -764,3 +764,60 @@
 }
 //end choose
 //start sell
+.sell__inner{
+    display: flex;
+    height: 565px;
+    margin: 0 auto;
+    width: 100%;
+}
+.sell__items-left{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    width: 50%;
+    background-image: url(../images/seell-bg-left.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.sell__items-right{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    width: 50%;
+    background-image: url(../images/seell-bg-right.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.sell__items{
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    &-img{
+        height: 104px;
+        margin-bottom: 45px;
+    }
+    &-title{
+        font-size: 36px;
+        line-height: 30px;
+        margin-bottom: 34px;
+    }
+    &-text{
+       max-width: 590px;
+       margin-bottom: 45px;
+    }
+    &-btn{
+        a{
+            padding: 15px 30px;
+            color: $btn;
+            background-color: #fff;
+            border-radius: 25px;
+            &:hover{
+                transition: .4s;
+                color: #fff;
+                background-color: $green;
+            }
+        }
+    }
+}
