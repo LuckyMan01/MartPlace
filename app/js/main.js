@@ -1,6 +1,6 @@
 $(function(){
 
-    var mixer = mixitup('.container');
+    var mixer = mixitup('.release__inner-mix');
 
     $('.header__slider-inner').slick({ 
         slidesToShow: 1,
@@ -42,8 +42,8 @@ $(function(){
         starWidth: "12px"
       });
       $(window).on("load", function () {
-        if ($('.products__inner-box').length) {
-            var mixer = mixitup('.products__inner-box');
+        if ($('.release__inner-mix').length) {
+            var mixer = mixitup('.release__inner-mix');
           }
         });
 
