@@ -19,7 +19,13 @@ $(function(){
         prevArrow: $('.product-prev'),
         nextArrow: $('.product-next')
       });
-
+      $('.feedback__slider').slick({ 
+        slidesToShow: 2,
+        slidesToScroll: 2, 
+        arrows: true,
+        prevArrow: $('.feedback-prev'),
+        nextArrow: $('.feedback-next')
+      });
       $('.follower__inner').slick({ 
         slidesToShow: 3,
         slidesToScroll: 3, 
@@ -35,5 +41,10 @@ $(function(){
         readOnly: true,
         starWidth: "12px"
       });
+      $(window).on("load", function () {
+        if ($('.products__inner-box').length) {
+            var mixer = mixitup('.products__inner-box');
+          }
+        });
 
 });
