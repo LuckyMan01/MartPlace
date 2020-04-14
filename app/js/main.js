@@ -41,6 +41,16 @@ $(function(){
         readOnly: true,
         starWidth: "12px"
       });
+      $('.icon-th-large').on('click', function(){
+        $('.icon-th-large').addClass('active');
+        $('.icon-sort-amount-asc').removeClass('active');
+      });
+    
+    $('.icon-sort-amount-asc').on('click', function(){
+      $('.icon-sort-amount-asc').addClass('active');
+      $('.icon-th-large').removeClass('active');
+    });
+
       $(window).on("load", function () {
         if ($('.release__inner-mix').length) {
             var mixer = mixitup('.release__inner-mix');
