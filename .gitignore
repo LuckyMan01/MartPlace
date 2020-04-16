@@ -3,5 +3,5 @@
 .LSOverride
 .vs
 Thumbs.db
-node_modules/
+# node_modules/
 app/css
