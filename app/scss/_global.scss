@@ -6,20 +6,27 @@ html{
 *::after{
     box-sizing: inherit;
 }
+* {
+	margin: 0;
+	padding: 0;
+}
+html,
+body {
+	height: 100%;
+}
 a{
     text-decoration: none;
     display: inline-block;
     color: $text;
 }
-ul [class] {
-    list-style: none
-}
+ul,
 li{
-    margin: 0;
     padding: 0;
+    margin: 0;
+    list-style: none;
 }
 body{
-    font-family: 'Roboto-Regular', sans-serif;
+    font-family: 'Quicksand-Regular', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -29,4 +36,56 @@ body{
     max-width: 1170px;
     padding: 0 15px;
     margin: 0 auto;
+}
+.container-fluid{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+@media (max-width: 720px){
+    .container-fluid{
+        padding: 0;
+    }
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+.breadcrumbs{
+    &__inner{
+        padding: 30px 0;
+    }
+    &__list{
+        li{
+            position: relative;
+            display: inline-block;
+            & + li{
+                padding-left: 24px;
+                &::before{
+                    content: '/';
+                    position: absolute;
+                    left: 8px;
+                    color: #bfcad7;
+                }
+            }
+            &:last-child{
+                a,
+                span{
+                    color: #fff;
+                }
+            }
+        }
+        a{
+            color: #bfcad7;
+        }
+    }
 }

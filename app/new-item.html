@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <header class="header">
+                <div class="header__top">
+                    <div class="container">
+                        <div class="header__inner">
+                            <div class="header__inner-logo">
+                                <a href="#">
+                                    <img src="images/header-logo.png" alt="">
+                                </a>
+                            </div>
+                            <div class="header__inner-btn">
+                                <a href="#">
+                                    Become a Seller
+                                </a>
+                            </div>
+                            <div class="header__inner-icons inner__icons">
+                                <a class="header__icons inner__icons-alarm" href="#"
+                                    style="background-image: url(images/icons/alarm.png);"> </a>
+                                <a class="header__icons inner__icons-email" href="#"
+                                    style="background-image: url(images/icons/email.png);"> </a>
+                                <a class="header__icons inner__icons-cart" href="#"
+                                    style="background-image: url(images/icons/cart.png);"> </a>
+                            </div>
+                            <div class="header__inner-user inner__user">
+                                <div class="inner__user-photo">
+                                    <a href="#" style="background-image: url(images/content/user.jpg);"></a>
+                                </div>
+                                <div class="inner__user-info">
+                                    <a class="inner__user-info-name" href="#">Taofiq Hakim</a>
+                                    <a class="inner__user-info-maney" href="#">$20</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="header__menu">
+                    <div class="container">
+                        <div class="menu__inner">
+                            <ul class="menu__inner-list">
+                                <li><a href="#">HOME</a></li>
+                                <li><a href="#">all products</a></li>
+                                <li><a href="#">wordpress</a></li>
+                                <li><a href="#">festures</a></li>
+                                <li><a href="#">Pages</a></li>
+                            </ul>
+                            <div class="menu__inner-form">
+                                <form>
+                                    <input type="text" placeholder="Search product here..." required>
+                                    <button type="submit">
+                                        <img src="images/icons/header-search.png" alt="">
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <section class="search">
+                <div class="container">
+                    <div class="search__inner">
+                        <div class="search__wrapper">
+                            <div class="search__title">
+                                4,572 wordpress themes, made with love
+                            </div>
+                            <div class="search__search">
+                                <form>
+                                    <input type="text" placeholder="Search your products" required>
+                                    <button type="submit">Search</button>
+                                </form>
+
+                            </div>
+                            <div class="breadcrumbs">
+                                <div class="breadcrumbs__inner">
+                                    <ul class="breadcrumbs__list">
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Category Page Grid</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="filter">
+                <div class="container">
+                    <div class="filter__inner">
+                        <div class="filter__tegs">
+                            <a class="New-Products active" href="#">New Products</a>
+                            <a class="Popular-Products" href="#">Popular Products</a>
+                        </div>
+                        <div class="filter__list">
+                            <form>
+                                <select name="Price : Low to High">
+                                    <option value="1"> Price : Low to High</option>
+                                </select>
+                                <select name="12 Items Per Page">
+                                    <option value="2">12 Items Per Page</option>
+                                </select>
+                            </form>
+                            <div class="filter__list-categori">
+                                <button class="icon-th-large active"></button>
+                                <button class="icon-sort-amount-asc"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sidebar">
+                <div class="container">
+                    <div class="sidebar__inner">
+                        <div class="sidebar__box">
+                            <div class="sidebar__box-categori sidebar__box-inner">
+                                <button class="sidebar__box__categori">
+                                    Categories
+                                </button>
+                                <ul class="sidebar__box-list-categori ">
+                                    <li><a href="#" class="active">Wordpress <span> 35</span></a></li>
+                                    <li><a href="#">Landing Page<span> 45</span></a></li>
+                                    <li><a href="#">Psd Template<span> 13</span></a></li>
+                                    <li><a href="#">Plugins<span> 08</span></a></li>
+                                    <li><a href="#">HTML Template<span> 36</span></a></li>
+                                    <li><a href="#">Components<span> 78</span></a></li>
+                                    <li><a href="#">Joomla Template<span> 26</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="sidebar__box-product sidebar__box-inner">
+                                <button class="sidebar__box__product">
+                                    Filter Products
+                                </button>
+                                <ul class="sidebar__box-list-product ">
+                                    <li><a href="#">Trending Products</a></li>
+                                    <li><a href="#">Popular Products</a></li>
+                                    <li><a href="#">New Products</a></li>
+                                    <li><a href="#">Best Seller</a></li>
+                                    <li><a href="#">Best Rating</a></li>
+                                    <li><a href="#">Low Price</a></li>
+                                    <li><a href="#">High Price</a></li>
+                                </ul>
+                            </div>
+                            <div class="sidebar__box-range sidebar__box-inner">
+                                <button class="sidebar__box-range-categori">
+                                    Pricing Range
+                                </button>
+                                <div class="sidebar__box--categori ">
+                                    <div class="sidebar__range">
+
+                                    </div>
+                                    <a href="#">Search Update</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar__product ">
+                            <div class="sidebar__product-inner  inner__sidebar">
+                                <a href="#" class="inner__sidebar-img"
+                                    style="background-image: url(images/content/icon-product-1.jpg);">
+                                </a>
+                                <div class="inner__sidebar-content ">
+                                    <div class="inner__sidebar-title">
+                                        Finance and Consulting
+                                        Consulting
+                                        <div class="inner__sidebar-text">
+                                            Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                        </div>
+                                        <a class="inner__sidebar-tems--on" href="#">
+                                            <img src="images/content/autor-tems.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="inner__sidebar-author">
+                                        <div class="inner__sidebar-author--box">
+                                            <a href="#" class="inner__sidebar-photo"
+                                                style="background-image: url(images/content/user.jpg);">
+                                            </a>
+                                            <a class="inner__sidebar-name" href="#">
+                                                AazzTech
+                                            </a>
+                                        </div>
+                                        <div class="inner__sidebar-author-box">
+                                            <div class="inner__sidebar-foloves ">
+                                                90 loves
+                                            </div>
+                                            <div class="inner__sidebar-coment ">
+                                                90  Comments
+                                            </div>
+                                            <div class="inner__sidebar-author-stars rate-star">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inner__sidebar-button">
+                                        <div class="inner__sidebar-star rate-star">
+                                        </div>
+                                        <div class="inner__sidebar-carts ">
+                                            <a href="#">566</a>
+                                        </div>
+                                    </div>
+                                    <div class="inner__sidebar-doun">
+                                        <div class="inner__sidebar-price ">
+                                            $10
+                                        </div>
+                                        <div class="inner__sidebar-carts ">
+                                            <a href="#">5646</a>
+                                        </div>
+                                        <a class="inner__sidebar-tems" href="#">
+                                            <img src="images/content/autor-tems.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sidebar__product-inner  inner__sidebar">
+                                <a href="#" class="inner__sidebar-img"
+                                    style="background-image: url(images/content/icon-product-1.jpg);">
+                                </a>
+                                <div class="inner__sidebar-content ">
+                                    <div class="inner__sidebar-title">
+                                        Finance and Consulting
+                                        Consulting
+                                        <div class="inner__sidebar-text">
+                                            Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                        </div>
+                                        <a class="inner__sidebar-tems--on" href="#">
+                                            <img src="images/content/autor-tems.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="inner__sidebar-author">
+                                        <div class="inner__sidebar-author--box">
+                                            <a href="#" class="inner__sidebar-photo"
+                                                style="background-image: url(images/content/user.jpg);">
+                                            </a>
+                                            <a class="inner__sidebar-name" href="#">
+                                                AazzTech
+                                            </a>
+                                        </div>
+                                        <div class="inner__sidebar-author-box">
+                                            <div class="inner__sidebar-foloves ">
+                                                90 loves
+                                            </div>
+                                            <div class="inner__sidebar-coment ">
+                                                90  Comments
+                                            </div>
+                                            <div class="inner__sidebar-author-stars rate-star">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inner__sidebar-button">
+                                        <div class="inner__sidebar-star rate-star">
+                                        </div>
+                                        <div class="inner__sidebar-carts ">
+                                            <a href="#">566</a>
+                                        </div>
+                                    </div>
+                                    <div class="inner__sidebar-doun">
+                                        <div class="inner__sidebar-price ">
+                                            $10
+                                        </div>
+                                        <div class="inner__sidebar-carts ">
+                                            <a href="#">5646</a>
+                                        </div>
+                                        <a class="inner__sidebar-tems" href="#">
+                                            <img src="images/content/autor-tems.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sidebar__product-inner  inner__sidebar">
+                                <a href="#" class="inner__sidebar-img"
+                                    style="background-image: url(images/content/icon-product-1.jpg);">
+                                </a>
+                                <div class="inner__sidebar-content ">
+                                    <div class="inner__sidebar-title">
+                                        Finance and Consulting
+                                        Consulting
+                                        <div class="inner__sidebar-text">
+                                            Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                        </div>
+                                        <a class="inner__sidebar-tems--on" href="#">
+                                            <img src="images/content/autor-tems.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="inner__sidebar-author">
+                                        <div class="inner__sidebar-author--box">
+                                            <a href="#" class="inner__sidebar-photo"
+                                                style="background-image: url(images/content/user.jpg);">
+                                            </a>
+                                            <a class="inner__sidebar-name" href="#">
+                                                AazzTech
+                                            </a>
+                                        </div>
+                                        <div class="inner__sidebar-author-box">
+                                            <div class="inner__sidebar-foloves ">
+                                                90 loves
+                                            </div>
+                                            <div class="inner__sidebar-coment ">
+                                                90  Comments
+                                            </div>
+                                            <div class="inner__sidebar-author-stars rate-star">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inner__sidebar-button">
+                                        <div class="inner__sidebar-star rate-star">
+                                        </div>
+                                        <div class="inner__sidebar-carts ">
+                                            <a href="#">566</a>
+                                        </div>
+                                    </div>
+                                    <div class="inner__sidebar-doun">
+                                        <div class="inner__sidebar-price ">
+                                            $10
+                                        </div>
+                                        <div class="inner__sidebar-carts ">
+                                            <a href="#">5646</a>
+                                        </div>
+                                        <a class="inner__sidebar-tems" href="#">
+                                            <img src="images/content/autor-tems.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sidebar__product-inner  inner__sidebar">
+                                <a href="#" class="inner__sidebar-img"
+                                    style="background-image: url(images/content/icon-product-1.jpg);">
+                                </a>
+                                <div class="inner__sidebar-content ">
+                                    <div class="inner__sidebar-title">
+                                        Finance and Consulting
+                                        Consulting
+                                        <div class="inner__sidebar-text">
+                                            Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                        </div>
+                                        <a class="inner__sidebar-tems--on" href="#">
+                                            <img src="images/content/autor-tems.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="inner__sidebar-author">
+                                        <div class="inner__sidebar-author--box">
+                                            <a href="#" class="inner__sidebar-photo"
+                                                style="background-image: url(images/content/user.jpg);">
+                                            </a>
+                                            <a class="inner__sidebar-name" href="#">
+                                                AazzTech
+                                            </a>
+                                        </div>
+                                        <div class="inner__sidebar-author-box">
+                                            <div class="inner__sidebar-foloves ">
+                                                90 loves
+                                            </div>
+                                            <div class="inner__sidebar-coment ">
+                                                90  Comments
+                                            </div>
+                                            <div class="inner__sidebar-author-stars rate-star">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inner__sidebar-button">
+                                        <div class="inner__sidebar-star rate-star">
+                                        </div>
+                                        <div class="inner__sidebar-carts ">
+                                            <a href="#">566</a>
+                                        </div>
+                                    </div>
+                                    <div class="inner__sidebar-doun">
+                                        <div class="inner__sidebar-price ">
+                                            free
+                                        </div>
+                                        <div class="inner__sidebar-carts ">
+                                            <a href="#">5646</a>
+                                        </div>
+                                        <a class="inner__sidebar-tems" href="#">
+                                            <img src="images/content/autor-tems.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sidebar__product-inner  inner__sidebar">
+                                <a href="#" class="inner__sidebar-img"
+                                    style="background-image: url(images/content/icon-product-1.jpg);">
+                                </a>
+                                <div class="inner__sidebar-content ">
+                                    <div class="inner__sidebar-title">
+                                        Finance and Consulting
+                                        Consulting
+                                        <div class="inner__sidebar-text">
+                                            Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                        </div>
+                                        <a class="inner__sidebar-tems--on" href="#">
+                                            <img src="images/content/autor-tems.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="inner__sidebar-author">
+                                        <div class="inner__sidebar-author--box">
+                                            <a href="#" class="inner__sidebar-photo"
+                                                style="background-image: url(images/content/user.jpg);">
+                                            </a>
+                                            <a class="inner__sidebar-name" href="#">
+                                                AazzTech
+                                            </a>
+                                        </div>
+                                        <div class="inner__sidebar-author-box">
+                                            <div class="inner__sidebar-foloves ">
+                                                90 loves
+                                            </div>
+                                            <div class="inner__sidebar-coment ">
+                                                90  Comments
+                                            </div>
+                                            <div class="inner__sidebar-author-stars rate-star">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inner__sidebar-button">
+                                        <div class="inner__sidebar-star rate-star">
+                                        </div>
+                                        <div class="inner__sidebar-carts ">
+                                            <a href="#">566</a>
+                                        </div>
+                                    </div>
+                                    <div class="inner__sidebar-doun">
+                                        <div class="inner__sidebar-price ">
+                                            $39.00
+                                        </div>
+                                        <div class="inner__sidebar-carts ">
+                                            <a href="#">5646</a>
+                                        </div>
+                                        <a class="inner__sidebar-tems" href="#">
+                                            <img src="images/content/autor-tems.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sidebar__product-inner  inner__sidebar">
+                                <a href="#" class="inner__sidebar-img"
+                                    style="background-image: url(images/content/icon-product-1.jpg);">
+                                </a>
+                                <div class="inner__sidebar-content ">
+                                    <div class="inner__sidebar-title">
+                                        Finance and Consulting
+                                        Consulting
+                                        <div class="inner__sidebar-text">
+                                            Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                        </div>
+                                        <a class="inner__sidebar-tems--on" href="#">
+                                            <img src="images/content/autor-tems.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="inner__sidebar-author">
+                                        <div class="inner__sidebar-author--box">
+                                            <a href="#" class="inner__sidebar-photo"
+                                                style="background-image: url(images/content/user.jpg);">
+                                            </a>
+                                            <a class="inner__sidebar-name" href="#">
+                                                AazzTech
+                                            </a>
+                                        </div>
+                                        <div class="inner__sidebar-author-box">
+                                            <div class="inner__sidebar-foloves ">
+                                                90 loves
+                                            </div>
+                                            <div class="inner__sidebar-coment ">
+                                                90  Comments
+                                            </div>
+                                            <div class="inner__sidebar-author-stars rate-star">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inner__sidebar-button">
+                                        <div class="inner__sidebar-star rate-star">
+                                        </div>
+                                        <div class="inner__sidebar-carts ">
+                                            <a href="#">566</a>
+                                        </div>
+                                    </div>
+                                    <div class="inner__sidebar-doun">
+                                        <div class="inner__sidebar-price ">
+                                            free
+                                        </div>
+                                        <div class="inner__sidebar-carts ">
+                                            <a href="#">5646</a>
+                                        </div>
+                                        <a class="inner__sidebar-tems" href="#">
+                                            <img src="images/content/autor-tems.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="pagination-sidebar">
+                            <ul class="pagination-sidebar__inner">
+                                <li class="pagination__arrow-left"><a href="#"></a></li>
+                                <li><a class="pagination-active" href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">...</a></li>
+                                <li><a href="#">8</a></li>
+                                <li class="pagination__arrow-right pagination-active__arrow"><a href="#"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="baner">
+            <div class="container">
+                <div class="baner__inner">
+                    <div class="baner__inner-wrapper">
+                        <div class="baner__inner-title">
+                            Ready to Join Our Marketplace!
+                        </div>
+                        <div class="baner__inner-text">
+                            Over 25,000 designers and developers trust the MartPlace.
+                        </div>
+                        <a href="#">Join Us Today</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__item footer__item-marplase">
+                        <div class="footer__item-logo">
+                            <a href="#"> <img src="images/footer-logo.png" alt=""></a>
+                        </div>
+                        <p>
+                            Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut scel erisque the
+                            mattis, leo quam.
+                        </p>
+                        <a class="footer__tel" href="tel:67898752235">
+                            Phone: +6789-875-2235
+                        </a>
+                        <a class="footer__email" href="#">
+                            support@aazztech.com
+                        </a>
+                        <a href="#">
+                            202 New Hampshire Avenue
+                            Northwest #100, New York-2573
+                        </a>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__item-title">
+                            Our Company
+                        </div>
+                        <ul class="footer__item-list">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">How It Work</a></li>
+                            <li><a href="#">Affiliates</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Copyright Notice</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__item-title">
+                            Help Support
+                        </div>
+                        <ul class="footer__item-list">
+                            <li><a href="#">Support Forum</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Support Policy</a></li>
+                            <li><a href="#">Refund Policy</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Buyers Faq</a></li>
+                            <li><a href="#">Sellers Faq</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__item footer__item-newsletter">
+                        <div class="footer__item-title">
+                            Newsletter
+                        </div>
+                        <p>
+                            Subscribe to get the latest news, update
+                            and offer information. Don't worry, we won't send spam!
+                        </p>
+                        <form>
+                            <input type="text" placeholder="Enter email" required>
+                            <button type="submit">
+                                Submit
+                            </button>
+                        </form>
+                        <ul class="footer__item-icons">
+                            <li><a class="link-facebook" href="#"></a></li>
+                            <li><a class="link-twitter" href="#"></a></li>
+                            <li><a class="link-google" href="#"></a></li>
+                            <li><a class="link-pinterest" href="#"></a></li>
+                            <li><a class="link-linkidin" href="#"></a></li>
+                            <li><a class="link-basket" href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="foter__bottom">
+                <div class="container">
+                    <div class="foter__bottom-text">
+                        ©2017 <span> MartPlace.</span> All rights reserved. Created by <span>AazzTech</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
