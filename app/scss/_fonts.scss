@@ -37,6 +37,9 @@
   .icon-envelope-o:before {
     content: "\f003";
   }
+  .icon-star-o:before {
+    content: "\f006";
+  }
   .icon-user:before {
     content: "\f007";
   }
@@ -45,6 +48,9 @@
   }
   .icon-th-list:before {
     content: "\f00b";
+  }
+  .icon-check:before {
+    content: "\f00c";
   }
   .icon-close:before {
     content: "\f00d";
@@ -55,8 +61,23 @@
   .icon-times:before {
     content: "\f00d";
   }
+  .icon-cog:before {
+    content: "\f013";
+  }
+  .icon-gear:before {
+    content: "\f013";
+  }
+  .icon-trash-o:before {
+    content: "\f014";
+  }
+  .icon-home:before {
+    content: "\f015";
+  }
   .icon-clock-o:before {
     content: "\f017";
+  }
+  .icon-download:before {
+    content: "\f019";
   }
   .icon-lock:before {
     content: "\f023";
@@ -73,8 +94,17 @@
   .icon-shopping-cart:before {
     content: "\f07a";
   }
+  .icon-bar-chart:before {
+    content: "\f080";
+  }
+  .icon-bar-chart-o:before {
+    content: "\f080";
+  }
   .icon-heart-o:before {
     content: "\f08a";
+  }
+  .icon-sign-out:before {
+    content: "\f08b";
   }
   .icon-phone:before {
     content: "\f095";
@@ -99,6 +129,9 @@
   }
   .icon-users:before {
     content: "\f0c0";
+  }
+  .icon-caret-up:before {
+    content: "\f0d8";
   }
   .icon-sort:before {
     content: "\f0dc";
@@ -160,6 +193,9 @@
   .icon-ellipsis-v:before {
     content: "\f142";
   }
+  .icon-check-square:before {
+    content: "\f14a";
+  }
   .icon-cny:before {
     content: "\f157";
   }
@@ -174,6 +210,9 @@
   }
   .icon-sort-amount-asc:before {
     content: "\f160";
+  }
+  .icon-stack-overflow:before {
+    content: "\f16c";
   }
   .icon-long-arrow-left:before {
     content: "\f177";
@@ -193,3 +232,4 @@
   .icon-location:before {
     content: "\e947";
   }
+  
