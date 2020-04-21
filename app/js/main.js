@@ -37,7 +37,7 @@ $(function(){
       });
       
       $(".rate-star").rateYo({
-        rating: 5,
+        rating: 4.5,
         readOnly: true,
         starWidth: "12px"
       });
@@ -80,7 +80,6 @@ $(function(){
     $('.btn-menu').on('click', function () {
       $('.menu__inner-list').slideToggle();
     });
-
     $(".sidebar__range").ionRangeSlider({
       type: "double",
       // grid: true,
@@ -90,13 +89,23 @@ $(function(){
       to: 300,
       prefix: "$"
   });
-    // $(".sidebar__range").ionRangeSlider({
-    //   min: 100,
-    //   max: 1000,
-    //   from: 550
-    // });
-    
 
+  $('.sidebar__price-btn').click(function(){
+    $('.sidebar__price-btn').toggleClass('price__btn-menu');
+    $('.sidebar__price-btn--off').removeClass('sidebar__price-btn--on');
+  }); 
+  $('.sidebar__price-btn').click(function(){
+    $('.sidebar__price-btn').toggleClass('sidebar__price-btn--on');
+  }); 
+
+  $('.wrapper .tab').on('click', function(event) {
+    var id = $(this).attr('data-id');
+      $('.wrapper').find('.tab-item').removeClass('active-tab').hide();
+      $('.wrapper .tabs').find('.tab').removeClass('tab-active');
+      $(this).addClass('tab-active');
+      $('#'+id).addClass('active-tab').fadeIn();
+      return false;
+    });
       $(window).on("load", function () {
         if ($('.release__inner-mix').length) {
             var mixer = mixitup('.release__inner-mix');
