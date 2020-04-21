@@ -4832,6 +4832,123 @@ body {
           justify-content: space-between;
 }
 
+.login-page {
+  background-color: #eff1f5;
+  padding-top: 70px;
+  padding-bottom: 120px;
+}
+
+.login-page__inner {
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 6px;
+  max-width: 560px;
+}
+
+.login-page__inner form {
+  padding: 0 50px;
+}
+
+.login-page__inner form p {
+  color: #000;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+.login-page__inner form input {
+  border: none;
+}
+
+.login-page__title {
+  font-size: 26px;
+  padding-bottom: 20px;
+  padding-top: 40px;
+  text-align: center;
+  color: #000;
+}
+
+.login-page__text {
+  text-align: center;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e8ebf0;
+  margin-bottom: 30px;
+}
+
+.login-page__pass-user,
+.login-page__name-user,
+.login-page__naw {
+  display: block;
+}
+
+.login-page__pass-user,
+.login-page__name-user {
+  margin-bottom: 30px;
+}
+
+.login-page__pass-user input,
+.login-page__name-user input {
+  background-color: #f4f5f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 14px 20px;
+}
+
+.login-page__pass {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 20px;
+  padding: 20px 0 40px;
+}
+
+.login-page__pass input {
+  border: none;
+  background-color: #0674ec;
+  height: 18px;
+  width: 18px;
+}
+
+.login-page__pass span {
+  margin-left: 17px;
+}
+
+.login-page__naw {
+  display: block;
+  max-width: 190px;
+  text-align: center;
+  padding: 13px 0;
+  background-color: #0674ec;
+  color: #fff;
+  border-radius: 25px;
+  margin-bottom: 40px;
+}
+
+.login-page__link {
+  padding-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.login-page__link a {
+  color: #898f96;
+  display: block;
+  padding: 0 5px;
+}
+
+.login-page__link span {
+  color: #0674ec;
+}
+
 @media (max-width: 1125px) {
   .footer__inner {
     -ms-flex-wrap: wrap;
