@@ -1,0 +1,157 @@
+@media( max-width: 1125px){
+    .footer__inner{
+        flex-wrap: wrap;
+    }
+    .footer__item-marplase{
+        width: 100%;
+        padding-bottom: 0;
+    }
+    .footer__item{
+        padding-top: 20px;
+    }
+}
+@media( max-width: 1070px){
+    .btn-menu{
+        display: block;
+    }
+    .btn-menu div{
+        width: 30px;
+        height: 3px;
+        background-color: $btn;
+        & + div{
+            margin-top: 3px;
+        }
+    }
+    .menu__inner{
+        position: relative;
+    }
+    .header__inner-menu, .menu__home-box, .menu__wordpress-box, .menu__all-box{
+        margin-bottom: 0;
+        padding-bottom: 0;
+        margin-top: 0;
+    }
+    .menu__pages-box{
+        padding-bottom: 0;
+    }.menu__home-box .menu__home-list, .menu__home-box .menu__wordpress-list, .menu__home-box .menu__all-list, .menu__wordpress-box .menu__home-list, .menu__wordpress-box .menu__wordpress-list, .menu__wordpress-box .menu__all-list, .menu__all-box .menu__home-list, .menu__all-box .menu__wordpress-list, .menu__all-box .menu__all-list, .menu__pages-box .menu__home-list, .menu__pages-box .menu__wordpress-list, .menu__pages-box .menu__all-list{
+        right: 0;
+    }
+    .menu__home-box .menu__home-list, .menu__home-box .menu__wordpress-list, .menu__home-box .menu__all-list, .menu__wordpress-box .menu__home-list, .menu__wordpress-box .menu__wordpress-list, .menu__wordpress-box .menu__all-list, .menu__all-box .menu__home-list, .menu__all-box .menu__wordpress-list, .menu__all-box .menu__all-list, .menu__pages-box .menu__home-list, .menu__pages-box .menu__wordpress-list, .menu__pages-box .menu__all-list{
+        top: 44px;
+    }
+    .menu__pages-list .pages__list-inner .pages__martplace, .menu__pages-list .pages__list-inner .pages__others{
+        flex-wrap: wrap;
+    }
+    .menu__home-box:hover .menu__home-list, .menu__home-box:hover .menu__wordpress-list, .menu__home-box:hover .menu__all-list, .menu__home-box:hover .menu__pages-list, .menu__wordpress-box:hover .menu__home-list, .menu__wordpress-box:hover .menu__wordpress-list, .menu__wordpress-box:hover .menu__all-list, .menu__wordpress-box:hover .menu__pages-list, .menu__all-box:hover .menu__home-list, .menu__all-box:hover .menu__wordpress-list, .menu__all-box:hover .menu__all-list, .menu__all-box:hover .menu__pages-list, .menu__pages-box:hover .menu__home-list, .menu__pages-box:hover .menu__wordpress-list, .menu__pages-box:hover .menu__all-list, .menu__pages-box:hover .menu__pages-list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .pages__list-inner{
+        position: relative;
+        display: inline;
+        .menu__pages-list .pages__list-inner .pages__martplace, .menu__pages-list .pages__list-inner .pages__others{
+            display: none;
+        }
+    }
+    .menu__pages-list{
+        top: 225px;
+    }
+    .menu__inner-list{
+        top: -40px;
+        display: none;
+        background-color: $bg;
+        position: absolute;
+        top: 78px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: 8;
+        text-align: center;
+        a{
+            display: block;
+            padding: 10px 0;
+            border-bottom: 1px solid #fff;
+        }
+        li{
+            display: block;
+            & + li{
+                margin-left: 0;
+                margin-right: 0;
+            }
+            &:first-child{
+                border-top: 1px solid #fff;
+            }
+        }
+    }
+}
+@media( max-width: 960px){
+    .footer__inner{
+        justify-content: center;
+    }
+}
+@media( max-width: 860px){
+    .header__inner-btn{
+        display: none;
+    }
+}
+@media( max-width: 770px){
+    .header__icons-box{
+        display: none;
+    }
+    .inner__cart{
+        display: block;
+        width: 20px;
+        margin-left: auto;
+        padding-right: 50px;
+    }
+    .header__icons-box .header__icons-menu{
+        right: -100%;
+    }
+    .header__icons-box .header__icons-menu{
+        right: -175px;
+        width: 350px;
+    }
+    .inner__cart .header__icons-menu .header__cart-img{
+        width: 0;
+    }
+    .inner__cart .header__icons-top--lin::after{
+        right: 180px;
+    }
+}
+@media( max-width: 650px){
+    .header__inner-logo{
+        img{
+            width: 100px;
+        } 
+    }
+    .menu__inner-form input{
+        width: 245px;
+    }
+    
+}
+@media( max-width: 450px){
+    .menu__pages-list .pages__list-inner .pages__martplace, .menu__pages-list .pages__list-inner .pages__others{
+        display: none;
+    }
+    .pages__dashboard{
+        display: none;
+    }
+}
+
+@media( max-width: 390px){
+    .footer__item-newsletter form input{
+        width: 200px;
+    }
+    .footer__item-newsletter form button{
+        left: 172px;
+    }
+}
+
+
+
+
+
+@media( min-width: 1070px){
+    .menu__inner-list{
+        display: block !important;
+    }
+}

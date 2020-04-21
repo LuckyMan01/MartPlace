@@ -77,6 +77,9 @@ $(function(){
       $('.pagination__arrow-left').removeClass('pagination-active__arrow');
     }); 
 
+    $('.btn-menu').on('click', function () {
+      $('.menu__inner-list').slideToggle();
+    });
 
     $(".sidebar__range").ionRangeSlider({
       type: "double",
@@ -92,6 +95,7 @@ $(function(){
     //   max: 1000,
     //   from: 550
     // });
+    
 
       $(window).on("load", function () {
         if ($('.release__inner-mix').length) {
