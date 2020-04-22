@@ -3489,6 +3489,7 @@ body {
 }
 
 .filter__inner-title span {
+  margin-right: 5px;
   font-weight: 600;
 }
 
@@ -4935,7 +4936,7 @@ body {
 }
 
 .login-page__inner form {
-  padding: 0 50px;
+  padding: 0 50px 40px;
 }
 
 .login-page__inner form p {
@@ -4950,17 +4951,27 @@ body {
 
 .login-page__title {
   font-size: 26px;
-  padding-bottom: 20px;
   padding-top: 40px;
   text-align: center;
   color: #000;
 }
 
 .login-page__text {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 50px 0;
   padding-bottom: 25px;
   border-bottom: 1px solid #e8ebf0;
   margin-bottom: 30px;
+  line-height: 30px;
+}
+
+.login-page__text-center {
+  text-align: center;
 }
 
 .login-page__pass-user,
@@ -5015,11 +5026,10 @@ body {
   background-color: #0674ec;
   color: #fff;
   border-radius: 25px;
-  margin-bottom: 40px;
 }
 
 .login-page__link {
-  padding-bottom: 40px;
+  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
