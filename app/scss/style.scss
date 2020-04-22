@@ -2026,7 +2026,7 @@
 }
 .filter__list{
     position: relative;
-    margin: 10px 30px;
+    margin: 10px 0 10px 30px;
     display: flex;
     &::before{
         z-index: 4;
@@ -2264,6 +2264,79 @@
 }
 .inner__sidebar-text{
     display: none;
+}
+.favorits__tegs{
+    cursor: pointer;
+    display: flex;
+    border-right: 1px solid #eceff2;
+    border-left: 1px solid #eceff2;
+    height: 100%;
+    align-items: center;
+    position: relative;
+    font-weight: 400;
+    font-size: 16px;
+    color: #555;
+    margin-left: auto;
+    padding: 0 40px 0 20px;
+    &::before{
+        content: '\f107';
+        font-family: 'icomoon';
+        position: absolute;
+        top: 39px;
+        right: 19px;
+        font-size: 20px;
+        color: #555;
+    }
+    &:hover{
+        .favorits__tegs-list{
+            display: block;
+            transition: all .4s;
+            padding: 25px 25px 30px;
+            height: auto;
+            overflow: visible;
+            border-top: 1px solid $btn;
+        }
+    }
+    .favorits__tegs-list{
+        overflow: hidden;
+        height: 0;
+        border-top: 1px solid transparent;
+        box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+        background-color: #fff;
+        width: 200px;
+        padding: 0px 25px 0px;
+        position: absolute;
+        top: 79px;
+        left: 0;
+        z-index: 5;
+        li{
+            margin-bottom: 10px;
+            a{
+                &:hover{
+                    color: $btn;
+                }
+            }
+        }
+        &::before{
+            content: '\f0de';
+            font-family: 'icomoon';
+            position: absolute;
+            top: -10px;
+            left: 43px;
+            font-size: 20px;
+            color: $btn;
+        }
+    }
+}
+.filter__inner-title{
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    span{
+        font-weight: 600;
+    }
 }
 //end filter
 //start sidebar
@@ -3532,9 +3605,11 @@
         font-weight: 600;
         padding-bottom: 25px;
         a{  
+            line-height: 40px;
             color: #333;
             &:hover{
             color: $btn;
+            
             }
         }        
     }
@@ -3757,7 +3832,30 @@
     font-weight: 400;
     text-align: center;
 }
-
+//end blog
+//start favorit
+.favorits{
+    background-color: #eff1f5;
+    padding: 70px 100px;
+}
+.favorits__inner{
+    position: relative;
+    margin-bottom: 70px;
+    .pagination-sidebar{
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        margin: 0 auto;
+        bottom: -70px;
+    }
+    .sidebar__product{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
 
 
 @import 'media';
