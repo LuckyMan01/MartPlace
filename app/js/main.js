@@ -105,7 +105,8 @@ $(function(){
       $(this).addClass('tab-active');
       $('#'+id).addClass('active-tab').fadeIn();
       return false;
-    });
+    }); 
+    
       $(window).on("load", function () {
         if ($('.release__inner-mix').length) {
             var mixer = mixitup('.release__inner-mix');

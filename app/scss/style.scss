@@ -3477,11 +3477,286 @@
         color: $btn;
     }
 }
+//end login
+//start blog
+.blog{
+    background-color: #eff1f5;
+    padding: 50px 0 120px;
+}
+.blog__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.blog__list{
+    position: relative;
+    max-width: 750px;
+    margin-bottom: 70px;
+    .pagination-sidebar{
+        left: 0;
+        bottom: -50px;
+    }
+    &-item{
+        margin-bottom: 40px;
+        background-color: #fff;
+        border-radius: 6px;
+        overflow: hidden;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    }
+    &-img{
+        display: flex;
+        height: 435px;
+        min-width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    &-top{
+        padding: 30px 30px 20px;
+        border-bottom: 1px solid #ececec;
+        margin-bottom: 25px;
+        span{
+            position: relative;
+            padding-left: 25px;
+            margin-left: 30px;
+            color: #898f96;
+            &:first-child{
+                margin-left: 0;
+            }
+            &::before{
+                color: #898f96;
+            }
+        }
+    }
+    &-title{
+        font-size: 30px;
+        font-weight: 600;
+        padding-bottom: 25px;
+        a{  
+            color: #333;
+            &:hover{
+            color: $btn;
+            }
+        }        
+    }
+    &-info{
+        padding: 0 30px 40px;
+        p{
+            line-height: 30px;
+        }
+        a{
+            margin-top: 35px;
+            color: #fff;
+            display: flex;
+            padding: 12px 0;
+            justify-content: center;
+            border-radius: 35px;
+            background-color: $btn;
+            max-width: 140px;
+        }
+    }
+}
+.blog__list-time{
+    &::before{
+        position: absolute;
+        font-family: 'icomoon';
+        content: '\f017';
+        left: 0;
+    }
+}
+.blog__list-coments{
+    &::before{
+        position: absolute;
+        font-family: 'icomoon';
+        content: '\f0e5';
+        left: 0;
+    }
+}
+.blog__list-eye{
+    &::before{
+        position: absolute;
+        font-family: 'icomoon';
+        content: '\f06e';
+        left: 0;
+    }
+}
 
-
-
-
-
+.blog__list-user{
+    position: relative;
+    &:hover{
+        color: $btn;
+    }
+    &::before{
+    position: absolute;
+    font-family: 'icomoon';
+    content: '\f007';
+    left: 0;
+    }
+}
+.blog__sitbar{
+    max-width: 360px;
+}
+.blog__sitbar-items{
+    width: 360px;
+    background-color: #fff;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+}
+.blog__sitbar-title{
+    font-size: 20px;
+    color: #000;
+    padding: 30px 0 30px 20px;
+    border-bottom: 1px solid #eff1f5;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+.blog__sitbar-inner{
+    padding: 0 30px 40px;
+    form{
+        position: relative;
+    }
+    input{
+        display: flex;
+        width: 100%;
+        height: 46px;
+        padding: 0 75px 0 20px;
+        border: 1px solid #eff1f5;
+        border-radius: 25px;
+        color: #898f96;
+    }
+    button{
+        position: absolute;
+        right: 0;
+        top: 0;
+        border: none;
+        background-color: $btn;
+        width: 70px;
+        height: 46px;
+        border-radius: 25px;
+    }
+}
+.blog__sitbar-link{
+    font-size: 20px;
+    font-size: 20px;
+    color: #000;
+    padding: 30px 30px 30px 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eff1f5;
+    display: flex;
+    justify-content: space-between;
+    a,
+    span{  
+        font-weight: 600;
+        color: #000;
+        &.active{
+            color: $btn;
+        }
+    }
+}
+.blog__sitbar-item{
+    margin-bottom: 30px;
+    display: flex;
+    border-bottom: 1px solid #eff1f5;
+    padding-bottom: 20px;
+    &:last-child{
+        margin-bottom: 0;
+        border-bottom: none;
+    }
+    .blog__sitbar-jpg{
+        margin-right: 20px;
+        height: 71px;
+        min-width: 71px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .blog__sitbar-text{
+        line-height: 24px;
+        a{
+        font-weight: 500;
+        color: #333; 
+        margin-bottom: 6px;  
+        }   
+        span{
+            color: #898f96;
+            position: relative;
+            padding-left: 25px;
+            &::before{
+                position: absolute;
+                font-family: 'icomoon';
+                content: '\f017';
+                left: 0;
+            }
+        }   
+    }
+}
+.blog__sitbar-list-categori{
+    li{
+        span{
+            right: 0;
+            position: absolute;
+        }
+        a{
+            display: flex;
+            width: 100%;
+            line-height: 36px;
+            padding-left: 20px;
+            position: relative;
+           &::before{
+            left: 0;
+            top: 0;
+            position: absolute;
+            font-family: 'icomoon';
+            content: '\f105';
+            } 
+            &:hover{
+                color: $btn;
+            }
+        }
+     
+    }
+    
+}
+.blog__sitbar-tegs{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px 30px;
+    a,
+    span{
+        display: block;
+        color: $btn;
+        background-color: #edf5fe;
+        padding: 4px 13px;
+        border-radius: 25px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        font-size: 15px;
+        &:hover{
+            background-color: $btn;
+            color: #fff;
+        }
+    }
+}
+.blog__sitbar-banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    height: 270px;
+    font-size: 36px;
+    line-height: 36px;
+    color: #f9f9f9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    span{
+        line-height: 20px;
+        font-size: 16px;
+    }
+}
+.sitbar__banner-inner{
+    font-weight: 400;
+    text-align: center;
+}
 
 
 
