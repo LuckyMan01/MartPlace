@@ -684,15 +684,21 @@
 .header__slider{
     font-weight: 400;
     position: relative;
-    height: 100%;
     display: block;
     text-align: center;
-    min-height: 724px;
+    padding: 0 20px;
+    height: 724px;
     background: linear-gradient(90deg, #5579fa, #3b61e9 );
 }
 .slider__items{
-    margin-top: 180px;
+    padding: 0 20px;
+    margin: 0 20px;
     color: #f3f3f8;
+    display: flex !important;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 724px;
     &-title{
         font-weight: 400;
         font-size: 60px;
@@ -737,10 +743,15 @@
     z-index: 5;
     position: relative;
     display: flex;
+    right: 0;
+    left: 0;
+    padding: 0 20px;
+    flex-wrap: wrap;
     margin: 0 auto;
     justify-content: center;
-    width: 1140px;
-    height: 137px;
+    max-width: 1140px;
+    width: 100%;
+    min-height: 137px;
     align-items: center;
     background-color: #fff;
     border-radius: 7px;
@@ -754,7 +765,9 @@
         border-radius: 7px;
         position: absolute;
         content: '';
-        width: 1080px;
+        max-width: 1090px;
+        display: flex;
+        width: 100%;
         height: 130px;
         background-color: #fff;
         opacity: .5;
@@ -768,7 +781,9 @@
         border-radius: 7px;
         position: absolute;
         content: '';
-        width: 1110px;
+        max-width: 1110px;
+        display: flex;
+        width: 100%;
         height: 130px;
         background-color: #fff;
         opacity: .5;
@@ -780,6 +795,15 @@
     color: $serch;
     font-size: 16px;
     margin-right: 20px;
+    margin: 0 auto;
+    display: flex;
+    max-width: 810px;
+    width: 100%;
+    justify-content: center;
+    form{
+        display: flex;
+        width: 100%;
+    }
     input{
         padding: 17px 195px 17px 22px;
         border-radius: 6px;
@@ -787,7 +811,9 @@
         border: 1px solid #d9dfe5;
         overflow: hidden;
         outline: none;
-        width: 810px;
+        display: flex;
+        max-width: 810px;
+        width: 100%;
     }
     select{
         cursor: pointer;
@@ -823,9 +849,12 @@
     }
 }
 .header__forms-btn{
-    margin-left: 10px;
+    display: flex;
+    margin: 0 auto;
     a{
-        padding: 15px 69px;
+        margin: 0 20px;
+        width: 150px;
+        padding: 15px 0px;
         color: #fff;
         border-radius: 6px;
         background-color: $btn;
@@ -922,17 +951,23 @@
     cursor: pointer;
 }
 .product__item{
+    border-radius: 6px;
+    overflow: hidden;
     width: 100%;
+    justify-content: center;
     display: flex !important;
     &-img{
-        width: 555px;
-        border-radius: 6px;
+        display: flex;
+        max-width: 555px;
+        width: 100%;
+        height: 450px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         &:hover &-hover{
             transition: .3s;
             height: 450px;
+            width: 100%;
             display: flex;
         }
         &-hover{
@@ -966,7 +1001,9 @@
 }
 
 .product__content{
-    height: 450px;
+    max-width: 590px;
+    width: 100%;
+    min-height: 450px;
     background-color: #fff;
     padding: 20px 50px 0 50px;
     &-title{
@@ -979,16 +1016,18 @@
     }
     &-text{
         height: 140px;
-        width: 490px;
+        max-width: 490px;
         overflow: hidden;
         padding: 0 10px 10px 0;
         color: $text;
         line-height: 24px;
     }
     &-tags{
+        margin-top: 10px;
         padding-bottom: 44px;
         border-bottom: 1px solid #ececec;
         a{
+            margin-bottom: 10px;
             color: #868c96;
             background-color: #f1f3f6;
             padding: 3px 10px;
@@ -999,6 +1038,7 @@
 }
 .product__slider{
     display: flex;
+    min-height: 450px;
 }
 .content__autor{
     align-items: center;
@@ -1025,7 +1065,9 @@
 }
 .product__button{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     margin-top: 37px;
     &-price{
         color: #fff;
@@ -1033,15 +1075,19 @@
         padding: 4px 15px;
         border-radius: 15px;
         margin-right: 10px;
+        margin-bottom: 10px;
     }
     &-foloves {
         padding: 0 10px;
+        margin-bottom: 10px;
     }
     &-carts {
         padding: 0 10px;
+        margin-bottom: 10px;
     }
     &-stars {
         margin-left: auto ;
+        margin-bottom: 10px;
     }
 }
 .product__button-foloves{
@@ -1114,6 +1160,7 @@
 .release__inner-btn{
     margin-bottom: 50px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 30px 20px;
     background-color: #fff;
@@ -1126,6 +1173,7 @@
         background-color: #f1f3f6;
         color: #747b86;
         outline: none;
+        margin-bottom: 10px;
         &.mixitup-control-active{
             background-color: $btn;
             color: #fff;
@@ -1222,7 +1270,7 @@
 .follower__content-carts{
     a{
         position: relative;
-        padding-left: 25px;
+        padding-left: 20px;
         &::before{
             position: absolute;
             content: "\f07a";
@@ -1248,6 +1296,8 @@
     width: 100%;
     max-width: 360px;
     margin-bottom: 30px;
+    overflow: hidden;
+    border-radius: 6px;
     &-img{
         display: flex;
         height: 230px;
@@ -1264,13 +1314,13 @@
             display: flex;
         }
         &-hover{
-            border-radius: 6px;
             display: flex;
             display: none;
             align-items: center;
             justify-content: center;
             height: 0px;
-            width: 555px;
+            max-width: 555px;
+            width: 100%;
             background: linear-gradient(90deg, #6e49b8, #0f70dd );
             a{
                 text-align: center;
@@ -1307,7 +1357,7 @@
     }
     &-text{
         height: 110px;
-        width: 300px;
+        max-width: 300px;
         overflow: hidden;
         padding: 0 10px 10px 2px;
         color: $text;
@@ -1318,7 +1368,7 @@
     display: flex;
 }
 .follower__item-content{
-    max-height: 300px;
+    min-height: 300px;
     background-color: #fff;
     padding: 25px 20px 17px 20px;
     border-bottom-left-radius: 6px;
@@ -1350,12 +1400,13 @@
 //end follower
 //start fact
 .fact{
-    height: 350px;
+    min-height: 350px;
     background-color: #212225;
 }
 .fact__inner{
     display: flex;
-    height: 350px;
+    flex-wrap: wrap;
+    min-height: 350px;
     align-items: center;
     text-align: center;
     background-color: #212225;
@@ -1363,7 +1414,7 @@
 }
 .fact__items{
     width: 240px;
-    margin: 0 10px;
+    margin: 20px 10px;
     &-img{
         margin-bottom: 50px;
         height: 50px;
@@ -1408,13 +1459,14 @@
     &-title{
         padding-top: 90px;
         margin-bottom: 30px;
+        line-height: 40px;
         font-size: 36px;
         span{
             color: $btn;
         }
     }
     &-text{
-        width: 700px;
+        max-width: 700px;
         color: #555;
         font-size: 18px;
         padding: 0 15px 50px 15px;
@@ -1424,7 +1476,7 @@
 
 .choose__items {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 100px;
     &-item{
@@ -1433,7 +1485,7 @@
         max-width: 360px;
         width: 100%;
         padding: 50px 20px 50px 20px;
-        margin-bottom: 30px;
+        margin: 0 10px 30px;
         &-img{
             height: 68px;
             position: relative;
@@ -1471,7 +1523,7 @@
 //start sell
 .sell__inner{
     display: flex;
-    height: 565px;
+    min-height: 565px;
     margin: 0 auto;
     width: 100%;
 }
@@ -1479,6 +1531,7 @@
     display: flex;
     align-items: center;
     margin-left: auto;
+    padding: 0 20px;
     width: 50%;
     background-image: url(../images/seell-bg-left.png);
     background-repeat: no-repeat;
@@ -1487,6 +1540,7 @@
 }
 .sell__items-right{
     display: flex;
+    padding: 0 20px;
     align-items: center;
     margin-left: auto;
     width: 50%;
@@ -1505,7 +1559,7 @@
     }
     &-title{
         font-size: 36px;
-        line-height: 30px;
+        line-height: 40px;
         margin-bottom: 34px;
     }
     &-text{
@@ -1581,7 +1635,7 @@
     text-align: left;
     max-width: 555px;
     padding: 50px 40px;
-    max-height: 315px;
+    min-height: 315px;
     box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
     &::before{
         content: '';
@@ -1636,9 +1690,10 @@
     position: relative;
     border-radius: 6px;
     overflow: hidden;
-    width: 360px;
+    max-width: 360px;
     background-color: #fff;
     padding-bottom: 80px;
+    margin: 20px;
     &-img{
         height: 230px;
         background-repeat: no-repeat;
@@ -1662,9 +1717,11 @@
         position: absolute;
         bottom: 0;
         display: flex;
-        width: 310px;
+        max-width: 310px;
+        width: 90%;
         align-items: center;
         height: 60px;
+        margin: 0 auto;
     }
     &-time{
         padding-left: 25px;
@@ -1733,9 +1790,11 @@
         background-color: #ececec;
     }
     &-money{
+        padding: 20px;
         text-align: center;
     }
     &-guarantee{
+        padding: 20px;
         text-align: center;
     }
 }

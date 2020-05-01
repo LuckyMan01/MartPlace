@@ -19,13 +19,25 @@ $(function(){
         prevArrow: $('.product-prev'),
         nextArrow: $('.product-next')
       });
+
       $('.feedback__slider').slick({ 
         slidesToShow: 2,
         slidesToScroll: 2, 
         arrows: true,
         prevArrow: $('.feedback-prev'),
-        nextArrow: $('.feedback-next')
+        nextArrow: $('.feedback-next'),
+        responsive: [
+          {
+            breakpoint: 950,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            }
+          }
+        ]
       });
+
+
       $('.follower__inner').slick({ 
         slidesToShow: 3,
         slidesToScroll: 3, 
@@ -33,7 +45,23 @@ $(function(){
         autoplay: true,
         autoplaySpeed: 2000,
         prevArrow: $('.follower-prev'),
-        nextArrow: $('.follower-next')
+        nextArrow: $('.follower-next'),
+        responsive: [
+          {
+            breakpoint: 1135,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            }
+          },
+          {
+            breakpoint: 770,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            }
+          }
+        ]
       });
       
       $(".rate-star").rateYo({
@@ -80,9 +108,9 @@ $(function(){
     $('.btn-menu').on('click', function () {
       $('.menu__inner-list').slideToggle();
     });
+
     $(".sidebar__range").ionRangeSlider({
       type: "double",
-      // grid: true,
       min: 0,
       max: 320,
       from: 30,
@@ -107,6 +135,8 @@ $(function(){
       return false;
     }); 
     
+    new WOW().init();
+
       $(window).on("load", function () {
         if ($('.release__inner-mix').length) {
             var mixer = mixitup('.release__inner-mix');

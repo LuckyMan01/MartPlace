@@ -9,7 +9,9 @@
   "author": "Volodymyr Hetsko",
   "license": "ISC",
   "dependencies": {
-    "gulp-sass": "^4.0.2"
+    "animate.css": "^3.7.2",
+    "gulp-sass": "^4.0.2",
+    "wow.js": "^1.2.2"
   },
   "devDependencies": {
     "@fancyapps/fancybox": "^3.5.7",
