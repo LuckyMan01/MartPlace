@@ -2014,6 +2014,7 @@
     background: linear-gradient(90deg, #671e90, #0c37da );
     &__title{
         font-size: 26px;
+        line-height: 30px;
         margin-bottom: 30px;
         color: #f3f3f8;
     }
@@ -2099,6 +2100,7 @@
     }
     &__tegs{
         color: $text;
+        line-height: 30px;
         a{
             margin-right: 30px;
         }

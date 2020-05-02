@@ -3109,6 +3109,7 @@ body {
 
 .search__title {
   font-size: 26px;
+  line-height: 30px;
   margin-bottom: 30px;
   color: #f3f3f8;
 }
@@ -3228,6 +3229,7 @@ body {
 
 .filter__tegs {
   color: #555;
+  line-height: 30px;
 }
 
 .filter__tegs a {
@@ -5922,6 +5924,104 @@ body {
   .favorits {
     padding-top: 30px;
   }
+  .how-It__Account-inner,
+  .how-It__Upload-inner,
+  .how-It__Money-inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .how-It__Account-img,
+  .how-It__Upload-img,
+  .how-It__Money-img {
+    width: 100%;
+    min-height: 352px;
+    max-width: 100%;
+  }
+  .how-It__Account-info,
+  .how-It__Upload-info,
+  .how-It__Money-info {
+    max-width: 100%;
+  }
+  .how-It__Upload-info {
+    margin-left: 0;
+    margin-right: -100px;
+  }
+  .how-It__Upload-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .how-It__Upload-inner .how-It__Account-info,
+  .how-It__Upload-inner .how-It__Money-info,
+  .how-It__Upload-inner .how-It__Upload-info,
+  .how-It__Account-inner .how-It__Account-info,
+  .how-It__Account-inner .how-It__Money-info,
+  .how-It__Account-inner .how-It__Upload-info,
+  .how-It__Money-inner .how-It__Account-info,
+  .how-It__Money-inner .how-It__Money-info,
+  .how-It__Money-inner .how-It__Upload-info {
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+  .how-It__Upload-inner:hover .how-It__Account-info,
+  .how-It__Upload-inner:hover .how-It__Money-info,
+  .how-It__Upload-inner:hover .how-It__Upload-info,
+  .how-It__Account-inner:hover .how-It__Account-info,
+  .how-It__Account-inner:hover .how-It__Money-info,
+  .how-It__Account-inner:hover .how-It__Upload-info,
+  .how-It__Money-inner:hover .how-It__Account-info,
+  .how-It__Money-inner:hover .how-It__Money-info,
+  .how-It__Money-inner:hover .how-It__Upload-info {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -webkit-animation: none;
+            animation: none;
+  }
+  .filter__tegs {
+    margin: 0 auto;
+  }
+  .filter__list {
+    margin: 0 auto;
+  }
+  .sidebar__inner {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .sidebar__product {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sidebar__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 0;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .sidebar__box-inner {
+    width: 100%;
+  }
+  .sidebar__box--categori.list-box,
+  .sidebar__box-list-product.list-box,
+  .sidebar__box-list-categori.list-box {
+    display: block;
+  }
+  .sidebar__box button::after {
+    display: none;
+  }
 }
 
 @media (max-width: 960px) {
@@ -6029,6 +6129,7 @@ body {
   .contacts__info-item {
     max-width: 500px;
     width: 100%;
+    margin: 10px 0;
   }
   .contacts__form {
     background-color: #fff;
@@ -6061,6 +6162,36 @@ body {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
+  }
+  .filter__list-categori .icon-sort-amount-asc {
+    display: none;
+  }
+  .filter__list-categori .icon-sort-amount-asc::before {
+    display: none;
+  }
+  .active-list {
+    display: none;
+  }
+  .sidebar__product-inner {
+    max-width: 100%;
+    width: 100%;
+  }
+  .sidebar__product .inner__sidebar-img {
+    width: 100%;
+  }
+  .sidebar__box {
+    display: block;
+  }
+  .sidebar__box-inner {
+    width: 100%;
+  }
+  .sidebar__box-inner {
+    width: 100%;
+    margin: 0 auto 30px;
+    max-width: 100%;
+  }
+  .product-one__info-list {
+    padding: 30px 10px 0;
   }
 }
 
@@ -6416,6 +6547,9 @@ body {
   }
   .filter__list-categori {
     margin-left: 0px;
+  }
+  .how-It__Upload-info {
+    margin-right: 0;
   }
 }
 
