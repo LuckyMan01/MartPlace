@@ -12,6 +12,8 @@ html{
 }
 html,
 body {
+    position: relative;
+    overflow-x: hidden;
 	height: 100%;
 }
 a{
@@ -26,6 +28,7 @@ li{
     list-style: none;
 }
 body{
+    overflow-x: hidden;
     font-family: 'Quicksand-Regular', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -61,6 +64,8 @@ body{
 	flex: 0 0 auto;
 }
 .breadcrumbs{
+    text-align: left;
+    padding-left: 10px;
     &__inner{
         padding: 30px 0;
     }
@@ -80,12 +85,15 @@ body{
             &:last-child{
                 a,
                 span{
-                    color: #fff;
+                    font-weight: 400;
+                    color: #bfcad7;
                 }
             }
         }
-        a{
-            color: #bfcad7;
+        a,
+        span{
+            font-weight: 400;
+            color: #fff;
         }
     }
 }
