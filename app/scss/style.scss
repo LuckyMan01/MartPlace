@@ -1295,7 +1295,7 @@
     box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
     width: 100%;
     max-width: 360px;
-    margin-bottom: 30px;
+    margin: 0 10px 30px;
     overflow: hidden;
     border-radius: 6px;
     &-img{
@@ -2092,7 +2092,7 @@
 .filter{
     background-color: #fff;
     &__inner{
-        height: 100px;
+        min-height: 100px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -2108,31 +2108,11 @@
     position: relative;
     margin: 10px 0 10px 30px;
     display: flex;
-    &::before{
-        z-index: 4;
-        font-family: 'icomoon';
-        content: "\f107";
-        position: absolute;
-        background-color: #fff;
-        width: 30px;
-        left: 470px;
-        top: 12px;
-        color: #000;
-        font-size: 16px;
-        line-height: 24px;
-    }
-    &::after{
-        z-index: 4;
-        font-family: 'icomoon';
-        content: "\f107";
-        position: absolute;
-        background-color: #fff;
-        width: 30px;
-        left: 216px;
-        top: 12px;
-        color: #000;
-        font-size: 16px;
-        line-height: 24px;
+    .filter__list-right{
+        position: relative;
+        &::before{
+            right: 6px;
+        }
     }
     select{
         margin-left: 30px;
@@ -2143,6 +2123,7 @@
         width: 220px;
         border: 1px solid #eceff2;
         border-radius: 6px;
+        margin-bottom: 10px;
     }
 }
 .filter__list-categori{
@@ -2351,6 +2332,7 @@
     border-right: 1px solid #eceff2;
     border-left: 1px solid #eceff2;
     height: 100%;
+    min-height: 100px;
     align-items: center;
     position: relative;
     font-weight: 400;
@@ -3646,19 +3628,22 @@
 .blog{
     background-color: #eff1f5;
     padding: 50px 0 120px;
+
 }
 .blog__inner{
     display: flex;
+    position: relative;
     justify-content: space-between;
+    .pagination-sidebar{
+        left: 0;
+        bottom: -50px;
+        margin-left: 30px;
+    }
 }
 .blog__list{
     position: relative;
     max-width: 750px;
-    margin-bottom: 70px;
-    .pagination-sidebar{
-        left: 0;
-        bottom: -50px;
-    }
+    margin: 0 10px 20px;
     &-item{
         margin-bottom: 40px;
         background-color: #fff;
@@ -3906,7 +3891,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 360px;
+    max-width: 360px;
     height: 270px;
     font-size: 36px;
     line-height: 36px;
@@ -3923,11 +3908,15 @@
     font-weight: 400;
     text-align: center;
 }
+.sitbar__banner{
+    max-width: 360px;
+    margin: 30px auto;
+}
 //end blog
 //start favorit
 .favorits{
     background-color: #eff1f5;
-    padding: 70px 100px;
+    padding: 70px 0px;
 }
 .favorits__inner{
     position: relative;

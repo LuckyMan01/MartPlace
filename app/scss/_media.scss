@@ -1,3 +1,11 @@
+@media( max-width: 1200px){
+    .favorits__inner{
+        .sidebar__product{
+        justify-content: center;
+        }
+    }
+    
+}
 @media( max-width: 1125px){
     .footer__inner{
         flex-wrap: wrap;
@@ -82,6 +90,9 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+    .filter__inner{
+        flex-wrap: wrap;
+    }
 }
 @media( max-width: 1070px){
     .btn-menu{
@@ -155,6 +166,9 @@
             }
         }
     }
+    .favorits{
+        padding-top: 30px;
+    }
 }
 @media( max-width: 960px){
     .footer__inner{
@@ -198,6 +212,18 @@
     .product-one__inner{
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .blog__inner{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .blog__sitbar-items{
+        width: 100%;
+    }
+    .blog__sitbar{
+        max-width: 900px;
+        width: 100%;
     }
 
 }
@@ -330,6 +356,9 @@
         a{
             margin-bottom: 20px;
         }
+    }
+    .filter__inner{
+        justify-content: center;
     }
 }
 @media( max-width: 650px){
@@ -494,6 +523,44 @@
             margin-bottom: 20px;
         }
     }
+    .blog__list-title{
+        padding-bottom: 10px;
+        a{
+            font-size: 24px;
+        }
+    }
+    .blog__list{
+        margin: 0 0 20px;
+    }
+    .follower__item-content {
+        padding: 10px 5px 10px 5px;
+    }
+    .filter__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 0;
+        select{
+            margin-left: 5px;
+        }
+        form{
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    .filter__inner{
+        justify-content: center;
+    }
+    .favorits__tegs{
+        width: 100%;
+    }
+    .filter__inner-title{
+        margin: 10px 0;
+    }
+    .filter__list-categori{
+        margin-left: 5px;
+    }
 }
     
 @media( max-width: 450px){
@@ -537,6 +604,27 @@
     }
     .pricing__item-hover{
         top: -190px;
+    }
+    .pagination__arrow-right,
+    .pagination__arrow-left{
+        display: none;
+    }
+    .blog__list-top,
+    .blog__list-info{
+        padding: 10px 10px 10px;
+    }
+    .blog__list-info{
+        a{
+            margin: 0 auto;
+        }
+    }
+    .filter__list{
+        select{
+            margin-left: 0;
+        }
+    }
+    .filter__list-categori{
+        margin-left: 0px;
     }
 }
 
