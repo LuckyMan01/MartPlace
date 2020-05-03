@@ -1,6 +1,6 @@
 $(function(){
 
-    // var mixer = mixitup('.release__inner-mix');
+   
 
     $('.header__slider-inner').slick({ 
         slidesToShow: 1,
@@ -136,11 +136,11 @@ $(function(){
     }); 
     
     new WOW().init();
-
-      $(window).on("load", function () {
-        if ($('.release__inner-mix').length) {
-            var mixer = mixitup('.release__inner-mix');
-          }
-        });
+    var mixer = mixitup('.release__inner-mix');
+      // $(window).on("load", function () {
+      //   if ($('.release__inner-mix').length) {
+      //       var mixer = mixitup('.release__inner-mix');
+      //     }
+      //   });
 
 });
